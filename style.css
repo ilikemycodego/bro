@@ -1,0 +1,85 @@
+/* базовый reset */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Grid: header / main / footer */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  font-family: system-ui, sans-serif;
+
+  /* тёмная тема */
+  background: #272828;
+  color: #e6e6e6;
+}
+
+/* общий контейнер */
+main {
+  padding: 24px;
+}
+
+/* header / footer */
+header, footer {
+  padding: 16px 24px;
+  background: #1e1f1f;
+}
+
+/* ссылки */
+a {
+  color: #7aa2ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* разделители */
+hr {
+  border: none;
+  border-top: 1px solid #7aa2ff;
+}
+
+/* немного воздуха */
+h1, h2 {
+  margin-top: 0;
+}
+
+/* футер */
+footer {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+
+
+.faq button {
+  background: none;
+  border: none;
+  color: #7aa2ff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+}
+
+.answer {
+  display: none;
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+.answer.open {
+  display: block;
+}

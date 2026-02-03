@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bro разработчик</title>
+  <meta name="description" content="Тренер 40+ и разработчик. Ссылки на приложения, контакты и мини-инструменты." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+
+  
+<div hx-get="/partials/header.html"
+     hx-trigger="load"
+     hx-swap="outerHTML"></div>
+
+<main>
+
+   <h3>Секундомер для тренировки в зале.</h3>
+  <p>
+    <a class="btn"
+       href="https://github.com/ilikemycodego/stopwatch/releases/download/v0.1/app-release.apk"
+       download>
+      ⬇️ Скачать секундомер Stopwatch (APK)
+    </a>
+  </p>
+
+  <p class="hint">
+    Android попросит разрешить установку из неизвестных источников.
+  </p>
+</main>
+
+<div hx-get="/partials/footer.html"
+     hx-trigger="load"
+     hx-swap="outerHTML"></div>
+
+</body>
+</html>
